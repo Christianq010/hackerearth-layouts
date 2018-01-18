@@ -1,0 +1,35 @@
+/*
+*
+* ------------------ Global Styles ---------------------- * / 
+*
+*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+.pf-sidebar {
+    background-color: grey;
+    padding: 5vw;
+}
+
+.pf-grid-item {
+    background-color: gray;
+    padding: 3vw;
+}

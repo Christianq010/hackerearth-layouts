@@ -39,3 +39,29 @@
         text-align: center;
     }
 }
+
+
+/* Large Screens */
+
+@media only screen and (min-width: 901px) {
+    .pf-sidebar-container {
+        flex: 35vw;
+    }
+    .pf-sidebar {
+        position: fixed;
+        height: 100vh;
+        width: 35vw
+    }
+    .pf-content {
+        flex: 65vw;
+    }
+    .pf-grid {
+        display: flex;
+        /* wrap to new line when full */
+        flex-wrap: wrap;
+    }
+    .pf-grid-item {
+        width: 47%;
+        margin-right: 1rem;
+    }
+}

@@ -1,0 +1,72 @@
+/*
+*
+* ------------------ Grid Specific CSS ---------------------- * / 
+*
+*/
+
+.pf-container {
+    /* Declare grid container */
+    display: grid;
+}
+
+.pf-content {
+    padding: 3vw;
+}
+
+.pf-grid-item {
+    margin-bottom: 1rem;
+}
+
+.pf-grid-item:last-child {
+    /* Remove bottom margin on the final child */
+    margin-bottom: 0;
+}
+
+
+/* Small Screens */
+
+@media only screen and (max-width: 900px) {
+    .pf-sidebar {
+        display: grid;
+        /* Center content vertically (y -axis) */
+        justify-content: center;
+        /* Center content horizontally (x - axis) */
+        align-items: center;
+        /* center wrapped text */
+        text-align: center;
+    }
+    .pf-grid {
+        display: grid;
+        /* 1fr - fraction of columns */
+        grid-auto-columns: 1fr;
+        /* automatically decide rows by no of items */
+        grid-auto-rows: auto;
+        /* add gutter */
+        grid-gap: 1rem;
+    }
+}
+
+
+/* Large Screens */
+
+@media only screen and (min-width: 901px) {
+    .pf-container {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+    }
+    .pf-sidebar {
+        position: fixed;
+        height: 100vh;
+        width: 33vw;
+    }
+    .pf-content {
+        /* place our content on the 2nd column of the screen */
+        grid-column-start: 2
+    }
+    .pf-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+    }
+}

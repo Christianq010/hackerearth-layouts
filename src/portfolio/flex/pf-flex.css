@@ -3,3 +3,39 @@
 * ------------------ Flexbox Specific CSS ---------------------- * / 
 *
 */
+
+.pf-container {
+    /* To enable flexbox layout */
+    display: flex;
+}
+
+.pf-content {
+    padding: 3vw;
+}
+
+.pf-grid-item {
+    margin-bottom: 1rem;
+}
+
+.pf-grid-item:last-child {
+    /* Remove bottom margin on the final child */
+    margin-bottom: 0;
+}
+
+
+/* Small Screens */
+
+@media only screen and (max-width: 900px) {
+    .pf-container {
+        /* define a direction to which flex items are arranged */
+        flex-direction: column;
+    }
+    .pf-sidebar {
+        /* Center content vertically (y -axis) */
+        justify-content: center;
+        /* Center content horizontally (x - axis) */
+        align-items: center;
+        /* center wrapped text */
+        text-align: center;
+    }
+}

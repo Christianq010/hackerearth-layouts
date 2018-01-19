@@ -1,4 +1,4 @@
-# Hacker Earth Tutues - CSS Layouts with Flexbox and CSS Grids 
+# Hacker Earth Tutorial - CSS Layouts with Flexbox and CSS Grids 
 This project is code created as part of following the youtube tutorial series by HackerEarth.
 
 ## Usage

@@ -1,0 +1,48 @@
+.app-message {
+    display: flex;
+}
+
+.app-message-content {
+    flex: 1;
+}
+
+.app-contacts,
+.app-chats {
+    height: 100vh;
+    overflow: scroll;
+}
+
+
+/* Large screen Layout*/
+
+@media only screen and (min-width: 901px) {
+    .app-container {
+        display: flex;
+    }
+    .app-contacts {
+        flex: 1;
+        border-right: solid 1px silver;
+    }
+    .app-chats {
+        flex: 2;
+    }
+    .app-chat-header {
+        background-color: silver;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .selected {
+        background-color: silver;
+    }
+}
+
+
+/* Hide Chat Section on Mobile Screens */
+
+@media only screen and (max-width: 900px) {
+    .app-chats {
+        display: none;
+    }
+}

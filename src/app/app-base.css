@@ -1,0 +1,43 @@
+/*
+*
+* ------------------ Global Styles ---------------------- * / 
+*
+*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.app-avatar {
+    border-radius: 50%;
+}
+
+.app-message {
+    padding: 3vw;
+}
+
+.app-contacts .app-avatar {
+    width: 3rem;
+}
+
+.app-sender {
+    font-weight: bold;
+}
+
+.app-contacts .app-message {
+    border-bottom: solid 1px silver;
+}

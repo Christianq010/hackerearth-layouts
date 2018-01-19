@@ -1,20 +1,21 @@
-# Template Starter Pack
-A light package for compiling Sass and running a dev server and managing bower dependencies from free HTML5 on the web.
+# Hacker Earth Tutues - CSS Layouts with Flexbox and CSS Grids 
+This project is code created as part of following the youtube tutorial series by HackerEarth.
 
 ## Usage
-> This project is a basic template for turning HTML5 templates on the web into projects I can edit with SASS and js dependencies handled via bower.
-
-> Also contains a few points on bower and npm as a refresher for me when initilizing a Front End project.
+> This project was started by cloning the following [starter project](https://github.com/Christianq010/sass_starter_pack). It is a basic template for turning HTML5 templates on the web into projects I can edit with SASS and JS dependencies handled via bower.
 
 
-### Version
-1.0.0
+### Tutorial
+HackerEarth Youtube Channel [here](https://www.youtube.com/channel/UCYU6nvKyRYnE5kiG9JXkXpA)
+
+* How to build complex layouts using CSS Flexbox and Grid part 1 - https://www.youtube.com/watch?v=Y7pT1zZLJb0/
+* How to build complex layouts using CSS Flexbox and Grid part 2 - https://www.youtube.com/watch?v=Y7pT1zZLJb0/
+* How to build complex layouts using CSS Flexbox and Grid part 3 - https://www.youtube.com/watch?v=Y7pT1zZLJb0/
+
 
 ## Installation
 
-### NPM
-* To start a package.json use `npm init`
-* Install packages by using `npm install gulp-sass gulp browersync` etc.
+### [NPM](https://docs.npmjs.com/cli/install)
 * Install the dependencies after cloning this project (gulp, gulp-sass, browser-sync)
 
 ```sh
@@ -22,26 +23,7 @@ $ npm install
 ```
 
 ### Bower
-* Initialize bower with `bower init`
-* Install a bower package and update `.json` with `bower install bootstrap -S`
-* Install any github url with `bower install url`
-* [Bower installer] (https://github.com/rquadling/bower-installer) provides an easy way for the main files to be installed or moved to one or more locations. Simply add to your `bower.json` an install key and path attribute:
-
-```
-{
-    "name": "test",
-    "version": "0.1",
-    "dependencies": {
-        "backbone": "latest"
-    },
-    "install": {
-        "path": "some/path",
-        "sources": {
-            "requirejs": "bower_components/requirejs/require.js"
-        }
-    }
-}
-```
+* Run `bower install`
 
 ### Run Server
 This will watch your sass files, compile them and run your dev server at http://localhost:3000
@@ -49,3 +31,10 @@ This will watch your sass files, compile them and run your dev server at http://
 ```sh
 $ npm start
 ```
+
+### Troubleshooting
+#### The `node-sass` Error
+* Delete the `node_modules` folder installed via `npm install`
+* Install node dependencies with `yarn install`
+* Run `npm rebuild node-sass`
+* Run with `gulp`.
